@@ -87,7 +87,7 @@ Renders an `<img>` tag pointing to the cached SVG file. Best for HTTP/2 environm
 
 ```php
 echo icon('home', format: 'image');
-// Output: <img src='/site/assets/icons/outline/home.svg' width='28' height='28' alt='icon home' />
+// Output: <img src='/site/assets/SimpleWire/icons/outline/home.svg' width='28' height='28' alt='icon home' />
 ```
 
 ## Size Presets
@@ -166,10 +166,10 @@ The config screen also shows a count of cached outline and filled icons.
 
 ## Cache
 
-Icons are cached locally at `site/assets/icons/` with the structure:
+Icons are cached locally at `site/assets/SimpleWire/icons/` with the structure:
 
 ```
-site/assets/icons/
+site/assets/SimpleWire/icons/
 ├── outline/
 │   ├── home.svg
 │   ├── settings.svg
@@ -245,7 +245,7 @@ foreach ($pages->find("template=category") as $cat) {
 #### Icon not rendering:
 
 *   Check that the icon name is valid at [tabler.io/icons](https://tabler.io/icons)
-*   Verify the `site/assets/icons/` directory is writable
+*   Verify the `site/assets/SimpleWire/icons/` directory is writable
 *   Check if `file_get_contents()` with URLs is enabled (`allow_url_fopen = On`)
 
 #### Wrong icon style:
@@ -256,7 +256,7 @@ foreach ($pages->find("template=category") as $cat) {
 #### Cache issues:
 
 *   Clear the cache to force re-download: `simpleicon()->clearCache()`
-*   Check file permissions on `site/assets/icons/`
+*   Check file permissions on `site/assets/SimpleWire/icons/`
 
 ## API Reference
 

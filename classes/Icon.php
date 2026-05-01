@@ -30,8 +30,8 @@ class Icon
     {
         $this->wire = $wire;
         $this->config = array_merge(static::getDefaults(), $config);
-        $this->basePath = $this->wire->config->paths->assets . "icons/";
-        $this->baseUrl = $this->wire->config->urls->assets . "icons/";
+        $this->basePath = $this->wire->config->paths->assets . "SimpleWire/icons/";
+        $this->baseUrl = $this->wire->config->urls->assets . "SimpleWire/icons/";
     }
 
     // ========================================

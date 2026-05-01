@@ -108,7 +108,7 @@ class SimpleIcon extends WireData implements Module, ConfigurableModule
         $fieldset->add($field);
 
         // Cache info
-        $iconPath     = wire()->config->paths->assets . 'icons/';
+        $iconPath     = wire()->config->paths->assets . 'SimpleWire/icons/';
         $totalOutline = 0;
         $totalFilled  = 0;
         foreach (['outline', 'filled'] as $style) {
@@ -124,7 +124,7 @@ class SimpleIcon extends WireData implements Module, ConfigurableModule
         $field        = $modules->get('InputfieldMarkup');
         $field->label = 'Cached Icons';
         $field->value = "<p>Outline: <strong>{$totalOutline}</strong> icons | Filled: <strong>{$totalFilled}</strong> icons</p>
-            <p>Cache location: <code>site/assets/icons/</code></p>";
+            <p>Cache location: <code>site/assets/SimpleWire/icons/</code></p>";
         $fieldset->add($field);
 
         $wrapper->add($fieldset);
